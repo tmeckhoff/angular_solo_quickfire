@@ -1,0 +1,11 @@
+<div class="container" ng-controller="WelcomeController">
+    <div>
+        <h1>{{heading}}</h1>
+        <h1 ng-repeat="x in kittyFooFoo">{{hello + x.message}}</h1>
+
+        <input ng-model="note.message" type="text" placeholder="Enter your name">
+    </div>
+
+    <button ng-click="updateMessage(note)">Update</button>
+</div>
+
